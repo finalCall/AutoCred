@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.app2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:7:22-78
+14
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/01fdb7b1bbf63122a3620af2e31db437/firebase-database-19.2.0/AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/01fdb7b1bbf63122a3620af2e31db437/firebase-database-19.2.0/AndroidManifest.xml:25:22-76
+18
+19    <application
+19-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:9:5-26:19
+20        android:allowBackup="true"
+20-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:10:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/e91594602c73eba9f0c6fb1745d43dba/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:11:9-43
+24        android:label="@string/app_name"
+24-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:12:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:13:9-54
+26        android:supportsRtl="true"
+26-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:15:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme"
+28-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:16:9-40
+29        android:usesCleartextTraffic="true" >
+29-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:14:9-44
+30        <activity android:name="com.example.app2.MainActivity" />
+30-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:17:9-59
+30-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:17:19-47
+31        <activity android:name="com.example.app2.Toggle" />
+31-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:18:9-44
+31-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:18:19-41
+32        <activity android:name="com.example.app2.Splash" >
+32-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:19:9-25:20
+32-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:19:19-41
+33            <intent-filter>
+33-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:20:13-24:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:21:17-69
+34-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:21:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:23:17-77
+36-->/Users/dhruvgupta/Documents/Hackathon/EasyPay/App2/app/src/main/AndroidManifest.xml:23:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+40            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+40-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+41            android:excludeFromRecents="true"
+41-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+42            android:exported="true"
+42-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+43            android:launchMode="singleTask"
+43-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+44            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+44-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+45            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+45-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+46
+47        <service
+47-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+48            android:name="com.google.firebase.components.ComponentDiscoveryService"
+48-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+49            android:directBootAware="true"
+49-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+50            android:exported="false" >
+50-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+51            <meta-data
+51-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+52                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+52-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+53                android:value="com.google.firebase.components.ComponentRegistrar" />
+53-->[com.google.firebase:firebase-auth:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/519bb249cc80507951a4e4dc8a3057bc/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+54            <meta-data
+54-->[com.google.firebase:firebase-database:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/01fdb7b1bbf63122a3620af2e31db437/firebase-database-19.2.0/AndroidManifest.xml:32:13-34:85
+55                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+55-->[com.google.firebase:firebase-database:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/01fdb7b1bbf63122a3620af2e31db437/firebase-database-19.2.0/AndroidManifest.xml:33:17-109
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.firebase:firebase-database:19.2.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/01fdb7b1bbf63122a3620af2e31db437/firebase-database-19.2.0/AndroidManifest.xml:34:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-storage:19.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b1c9cdf8dffbfa1e2ecb1f0c1e832d29/firebase-storage-19.1.0/AndroidManifest.xml:33:13-35:85
+58                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+58-->[com.google.firebase:firebase-storage:19.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b1c9cdf8dffbfa1e2ecb1f0c1e832d29/firebase-storage-19.1.0/AndroidManifest.xml:34:17-107
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-storage:19.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b1c9cdf8dffbfa1e2ecb1f0c1e832d29/firebase-storage-19.1.0/AndroidManifest.xml:35:17-82
+60        </service>
+61
+62        <provider
+62-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:18:9-26:20
+63            android:name="com.iceteck.silicompressorr.provider.GenericFileProvider"
+63-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:19:13-84
+64            android:authorities="com.example.app2.iceteck.silicompressor.provider"
+64-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:20:13-83
+65            android:exported="false"
+65-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:21:13-37
+66            android:grantUriPermissions="true" >
+66-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:22:13-47
+67            <meta-data
+67-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:23:13-25:58
+68                android:name="android.support.FILE_PROVIDER_PATHS"
+68-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:24:17-67
+69                android:resource="@xml/provider_paths" />
+69-->[com.iceteck.silicompressorr:silicompressor:2.2.3] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a4d14dee32f0749edee2c625f093dadd/jetified-silicompressor-2.2.3/AndroidManifest.xml:25:17-55
+70        </provider>
+71
+72        <activity
+72-->[com.google.android.gms:play-services-base:17.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a7dfbb78c47d6fb61939251aeae30df0/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+73            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+73-->[com.google.android.gms:play-services-base:17.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a7dfbb78c47d6fb61939251aeae30df0/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+74            android:exported="false"
+74-->[com.google.android.gms:play-services-base:17.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a7dfbb78c47d6fb61939251aeae30df0/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+75-->[com.google.android.gms:play-services-base:17.1.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/a7dfbb78c47d6fb61939251aeae30df0/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+76
+77        <provider
+77-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+78            android:name="com.google.firebase.provider.FirebaseInitProvider"
+78-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+79            android:authorities="com.example.app2.firebaseinitprovider"
+79-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+80            android:exported="false"
+80-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+81            android:initOrder="100" />
+81-->[com.google.firebase:firebase-common:19.3.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/b0fd3caea345557b1f313f24c9307593/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+82
+83        <meta-data
+83-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/d6c80550e380e51539858650f65ac054/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+84            android:name="com.google.android.gms.version"
+84-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/d6c80550e380e51539858650f65ac054/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+85            android:value="@integer/google_play_services_version" />
+85-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dhruvgupta/.gradle/caches/transforms-2/files-2.1/d6c80550e380e51539858650f65ac054/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+86    </application>
+87
+88</manifest>
