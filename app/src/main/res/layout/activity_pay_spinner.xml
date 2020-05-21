@@ -7,12 +7,31 @@
     tools:context="com.dhruv.app.paySpinner">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/recieveText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:text="Payment spinner here"
+        android:layout_marginBottom="254dp"
+        android:text="RECEIVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <co.aenterhy.toggleswitch.ToggleSwitchButton
+        android:id="@+id/toggle"
+        style="@style/ToggleSwitchButton"
+        android:layout_marginTop="268dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/payText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:text="PAY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
