@@ -2,6 +2,7 @@ package com.dhruv.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -19,11 +20,15 @@ public class paySpinner extends AppCompatActivity {
             @Override
             public void toggledUp() {
                 Toast.makeText(getApplicationContext(),"Pay", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),payActivity.class);
+                startActivity(i);
             }
 
             @Override
             public void toggledDown() {
                 Toast.makeText(getApplicationContext(),"Recieve", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),recieveActivity.class);
+                startActivity(i);
             }
         });
     }

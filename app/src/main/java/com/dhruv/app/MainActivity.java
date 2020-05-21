@@ -14,12 +14,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button submit = (Button) findViewById(R.id.submit);
-        submit.setOnClickListener(new View.OnClickListener()
+        Button loginbtn = (Button) findViewById(R.id.loginbtn);
+        Button signupbtn = (Button) findViewById(R.id.signbtn);
+
+        loginbtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+                Intent i = new Intent(getApplicationContext(),paySpinner.class);
+                startActivity(i);
+            }
+        });
+
+        signupbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),paySpinner.class);
                 startActivity(i);
             }
