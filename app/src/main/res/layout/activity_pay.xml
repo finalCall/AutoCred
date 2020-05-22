@@ -13,6 +13,7 @@
         android:layout_marginBottom="176dp"
         android:ems="10"
         android:inputType="numberSigned"
+        android:hint="Phone no."
         app:layout_constraintBottom_toTopOf="@+id/paybtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +51,7 @@
         android:layout_marginStart="1dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:hint="Amount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/userNumber"
         app:layout_constraintTop_toTopOf="parent" />
