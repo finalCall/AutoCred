@@ -40,7 +40,7 @@ public class signupView extends AppCompatActivity {
                 Toast.makeText(this, "Video saved to:\n" +
                         videoUri, Toast.LENGTH_LONG).show();
                 // Redirecting to spinner View
-                Intent i = new Intent(getApplicationContext(),paySpinner.class);
+                Intent i = new Intent(getApplicationContext(),payActivity.class);
                 startActivity(i);
 
             } else if (resultCode == RESULT_CANCELED) {

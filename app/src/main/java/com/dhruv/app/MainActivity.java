@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent i = new Intent(getApplicationContext(),paySpinner.class);
+                Intent i = new Intent(getApplicationContext(),payActivity.class);
                 startActivity(i);
             }
         });

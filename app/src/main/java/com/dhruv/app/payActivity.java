@@ -15,11 +15,20 @@ public class payActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pay);
 
         Button paymentButton = (Button) findViewById(R.id.paymentButton);
+        Button paymentRcvButton = (Button) findViewById(R.id.paymentRcvButton);
 
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),confirmPay.class);
+                startActivity(i);
+            }
+        });
+
+        paymentRcvButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),recieveActivity.class);
                 startActivity(i);
             }
         });
