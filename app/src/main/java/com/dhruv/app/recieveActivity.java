@@ -20,6 +20,7 @@ public class recieveActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recieve);
 
         Button paymentButton = (Button) findViewById(R.id.paymentButton);
+        Button paymentNavigate = (Button) findViewById(R.id.payNavigateButton);
 
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,15 @@ public class recieveActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_VIDEO_CAPTURE);
             }
         });
+
+        paymentNavigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), payActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
