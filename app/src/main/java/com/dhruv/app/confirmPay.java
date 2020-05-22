@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class payActivity extends AppCompatActivity {
+public class confirmPay extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pay);
+        setContentView(R.layout.activity_confirm_pay);
 
-        Button paymentButton = (Button) findViewById(R.id.paymentButton);
+        Button homeButton = (Button) findViewById(R.id.homeButton);
 
-        paymentButton.setOnClickListener(new View.OnClickListener() {
+        homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),confirmPay.class);
+                Intent i = new Intent(getApplicationContext(), paySpinner.class);
                 startActivity(i);
             }
         });
