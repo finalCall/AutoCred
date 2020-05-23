@@ -24,10 +24,33 @@ public class payActivity extends AppCompatActivity {
 
     EditText phoneEditText;
     EditText amountEditText;
-    String URL_POST = "http://192.168.100.4:4000/user";
+    String URL_Pay = "http://192.168.100.4:5000/api/user/pay/";
+    String URL_Wallet = "http://192.168.100.4:5000/api/user/wallet/";
+
+    public void checkBalance() {
+
+        String URL_GET = URL_Wallet + "abc";
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_GET, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(payActivity.this, "Current Balance." + response.toString(), Toast.LENGTH_SHORT).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(payActivity.this, "Error!"+ error.toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
 
 
     public void payRequest() {
+        String URL_POST = URL_Pay + "/987/9089/15";
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_POST, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -41,17 +64,7 @@ public class payActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(payActivity.this, "Error! Please try again later", Toast.LENGTH_SHORT).show();
             }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-
-                params.put("phone", phoneEditText.getText().toString().trim());
-                params.put("amount", amountEditText.getText().toString().trim());
-
-                return super.getParams();
-            }
-        };
+        });
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
@@ -65,12 +78,14 @@ public class payActivity extends AppCompatActivity {
         EditText amountEditText = (EditText) findViewById(R.id.paymentAmount);
         EditText phoneEditText = (EditText) findViewById(R.id.userNumber);
 
+        checkBalance();
+
         Button paymentButton = (Button) findViewById(R.id.paymentButton);
 
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                payRequest();
+                checkBalance();
             }
         });
     }
