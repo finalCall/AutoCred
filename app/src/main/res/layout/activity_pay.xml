@@ -40,7 +40,7 @@
         android:text="Pay"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentBalance" />
 
@@ -72,10 +72,10 @@
 
     <TextView
         android:id="@+id/currentBalance"
-        android:layout_width="179dp"
-        android:layout_height="36dp"
+        android:layout_width="213dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="48dp"
-        android:text="Current Balance : Rs.50"
+        android:text="Current Balance : Rs. _"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/paymentButton"
