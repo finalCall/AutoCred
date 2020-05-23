@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="93dp"
         android:layout_marginBottom="56dp"
-        android:text="Recieve Paymnet From"
+        android:text="Recieve Payment From"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintBottom_toTopOf="@+id/username2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,8 +29,8 @@
         android:hint="Enter Amount"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/paymentButton"
-        app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintStart_toStartOf="@+id/username2"
+        app:layout_constraintTop_toBottomOf="@+id/username2" />
 
     <Button
         android:id="@+id/paymentButton"
@@ -44,12 +44,12 @@
         app:layout_constraintTop_toBottomOf="@+id/userAmount" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username2"
         android:layout_width="217dp"
         android:layout_height="53dp"
         android:layout_marginBottom="29dp"
         android:ems="10"
-        android:hint="Enter Uesrname"
+        android:hint="Enter Username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/userAmount"
         app:layout_constraintStart_toStartOf="@+id/textView4"

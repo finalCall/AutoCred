@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -17,24 +17,26 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class payActivity extends AppCompatActivity {
 
     EditText phoneEditText;
     EditText amountEditText;
-    String URL_Pay = "http://192.168.100.4:5000/api/user/pay/";
-    String URL_Wallet = "http://192.168.100.4:5000/api/user/wallet/";
+    TextView currentBalanceView;
+    Bundle bundle;
+    String userName;
+
+    String URL_Pay = "https://autocred-server.herokuapp.com/api/user/pay/";
+    String URL_Wallet = "https://autocred-server.herokuapp.com/api/user/wallet/";
 
     public void checkBalance() {
 
-        String URL_GET = URL_Wallet + "abc";
+        String URL_GET = URL_Wallet + userName;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_GET, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(payActivity.this, "Current Balance." + response.toString(), Toast.LENGTH_SHORT).show();
+                currentBalanceView.setText("Current Balance : Rs." + response.toString());
             }
         }, new Response.ErrorListener() {
             @Override
@@ -49,7 +51,7 @@ public class payActivity extends AppCompatActivity {
 
 
     public void payRequest() {
-        String URL_POST = URL_Pay + "/987/9089/15";
+        String URL_POST = URL_Pay + userName + "/" + phoneEditText.getText().toString() + "/" + amountEditText.getText().toString();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_POST, new Response.Listener<String>() {
             @Override
@@ -57,6 +59,9 @@ public class payActivity extends AppCompatActivity {
                 Toast.makeText(payActivity.this, "Amount Transfered!", Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(getApplicationContext(),confirmPay.class);
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("userName", userName);
+                i.putExtras(bundle2);
                 startActivity(i);
             }
         }, new Response.ErrorListener() {
@@ -75,8 +80,12 @@ public class payActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
-        EditText amountEditText = (EditText) findViewById(R.id.paymentAmount);
-        EditText phoneEditText = (EditText) findViewById(R.id.userNumber);
+        bundle = getIntent().getExtras();
+        userName = bundle.getString("userName");
+
+        amountEditText = (EditText) findViewById(R.id.paymentAmount);
+        phoneEditText = (EditText) findViewById(R.id.phone);
+        currentBalanceView = (TextView) findViewById(R.id.currentBalance);
 
         checkBalance();
 
@@ -86,7 +95,7 @@ public class payActivity extends AppCompatActivity {
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkBalance();
+                payRequest();
             }
         });
 
@@ -94,6 +103,11 @@ public class payActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),recieveActivity.class);
+
+                Bundle bundle1 = new Bundle();
+                bundle1.putString("userName", userName);
+                i.putExtras(bundle1);
+
                 startActivity(i);
             }
         });
