@@ -81,11 +81,20 @@ public class payActivity extends AppCompatActivity {
         checkBalance();
 
         Button paymentButton = (Button) findViewById(R.id.paymentButton);
+        Button paymentRcvButton = (Button) findViewById(R.id.paymentRcvButton);
 
         paymentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 checkBalance();
+            }
+        });
+
+        paymentRcvButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),recieveActivity.class);
+                startActivity(i);
             }
         });
     }

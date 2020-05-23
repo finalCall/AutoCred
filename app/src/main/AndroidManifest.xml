@@ -20,7 +20,6 @@
         <activity android:name=".signupView" />
         <activity android:name=".recieveActivity" />
         <activity android:name=".payActivity" />
-        <activity android:name=".paySpinner" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
