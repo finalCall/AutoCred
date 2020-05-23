@@ -101,8 +101,8 @@ public class recieveActivity extends AppCompatActivity {
                 // Redirecting to spinner View
 
                 payRequest();
-                Intent i = new Intent(getApplicationContext(),confirmPay.class);
-                startActivity(i);
+                Intent in = new Intent(getApplicationContext(),confirmPay.class);
+                startActivity(in);
 
             } else if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "Failed to authenticate.",
