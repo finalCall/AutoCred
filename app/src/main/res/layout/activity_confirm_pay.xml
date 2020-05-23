@@ -24,7 +24,7 @@
         android:id="@+id/currentBalance"
         android:layout_width="228dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="182dp"
+        android:layout_marginBottom="122dp"
         android:text="Current Balance : Rs._"
         android:textSize="15sp"
         android:textStyle="bold"
