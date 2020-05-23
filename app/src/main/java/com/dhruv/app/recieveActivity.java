@@ -29,7 +29,7 @@ public class recieveActivity extends AppCompatActivity {
     String URL_Recieve = "https://autocred-server.herokuapp.com/api/user/receive/";
 
     public void payRequest() {
-        String URL_POST = URL_Recieve + userName + "/" + username2EditText.getText().toString() + "/" + amountEditText.getText().toString();
+        String URL_POST = URL_Recieve + username2EditText.getText().toString() + "/" + userName + "/" + amountEditText.getText().toString();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_POST, new Response.Listener<String>() {
             @Override
