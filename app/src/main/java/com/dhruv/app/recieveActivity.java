@@ -102,6 +102,9 @@ public class recieveActivity extends AppCompatActivity {
 
                 payRequest();
                 Intent in = new Intent(getApplicationContext(),confirmPay.class);
+                Bundle bundle2 = new Bundle();
+                bundle2.putString("userName", userName);
+                in.putExtras(bundle2);
                 startActivity(in);
 
             } else if (resultCode == RESULT_CANCELED) {
